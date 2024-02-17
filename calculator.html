@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link REL="stylesheet" href="calculator.css">
+    <script src="calculato.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <h4><span>C</span>alculator</h4>
+    </div>
+    <div class="body">
+
+        <div id="rusalt">
+            <input type="text" value="" placeholder=" rusalt " id="display">
+        </div>
+        <div class="key">
+            <table>
+
+                <tr>
+                    <td><button id="op" type="button" value="(" onclick="display.value += '('">(</button></td>
+                    <td><button id="op" type="button" value=")" onclick="display.value += ')'">)</button></td>
+                    <td><button id="op" type="button" value="⌫" onclick="backspace()">⌫</button></td>
+                    <td><button id="op" type="button" value="CE" onclick="display.value = ''">CE</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="7" onclick="display.value += '7'">7</button></td>
+                    <td><button type="button" value="8" onclick="display.value += '8'">8</button></td>
+                    <td><button type="button" value="9" onclick="display.value += '9 '">9</button></td>
+                    <td><button id="op" type="button" value="÷" onclick="display.value += '/'">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="4" onclick="display.value += '4'">4</button></td>
+                    <td><button type="button" value="5" onclick="display.value += '5'">5</button></td>
+                    <td><button type="button" value="6" onclick="display.value += '6'">6</button></td>
+                    <td><button id="op" type="button" value="×" onclick="display.value += '*'">×</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="1" onclick="display.value += '1'">1</button></td>
+                    <td><button type="button" value="2" onclick="display.value += '2'">2</button></td>
+                    <td><button type="button" value="3" onclick="display.value += '3'">3</button></td>
+                    <td><button id="op" type="button" value="-" onclick="display.value += '-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="0" onclick="display.value += '0'">0</button></td>
+                    <td><button type="button" value="." onclick="display.value += '.'">.</button></td>
+                    <td><button id="eq" type="button" value="=" onclick="calculate()">=</button></td>
+                    <td><button id="op" type="button" value="+" onclick="display.value += '+'">+</button></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="advanc">
+                <tr>
+                    <td colspan="2"> <button type="button" id="col" value="Rad">Red | Deg</button>
+
+                    </td>
+
+                    <td> <button type="button" id="op" value="x!" onclick="display.value += ' !'">x!</button></td>
+                </tr>
+                <tr>
+                    <td> <button type="button" id="op" value="%" onclick="display.value += '%'">%</button></td>
+                    <td> <button type="button" id="op" value="sin" onclick="display.value += 'sin'">sin</button></td>
+                    <td>
+                        <button type="button" id="op" value="In">In</button></td>
+                </tr>
+                <tr>
+                    <td> <button type=" button " id="op " value="π " onclick="pi( ) " style="background-color: #dadce0; ">π</button></td>
+                    <td> <button type="button " id="op " value="cos " onclick="display.value +='cos' " style="background-color: #dadce0; ">cos</button></td>
+                    <td> <button type="button " id="op " value="log " onclick="base10Log() " style="background-color: #dadce0; ">log</button></td>
+                </tr>
+                <tr>
+                    <td> <button type="button " id="op " value="e " onclick="display.value +='e' " style="background-color: #dadce0; ">e</button></td>
+                    <td> <button type="button " id="op " value="ten " onclick="display.value +='tan' " style="background-color: #dadce0; ">ten</button></td>
+                    <td> <button type="button " id="op " value="√ " onclick="squareRoot() " style="background-color: #dadce0; ">√ </button></td>
+                </tr>
+                <tr>
+                    <td> <button type="button " id="op " value="Ans " style="background-color: #dadce0; ">Ans</button></td>
+                    <td> <button type="button " id="op " value="EXP " style="background-color: #dadce0; ">EXP</button></td>
+                    <td> <button type="button " id="op " value=" " onclick="power() " style="background-color: #dadce0; ">X<sup>y</sup></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
