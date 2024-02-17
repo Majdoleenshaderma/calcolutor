@@ -1,0 +1,118 @@
+.body {
+    margin: auto;
+    margin-top: 10%;
+    border: 2px #0a1fe2 solid;
+    width: 800px;
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+    padding-left: 0px;
+}
+
+input {
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #dadce0;
+    margin-left: 45px;
+    font-size: 30px;
+    padding-left: 413px;
+    text-align: right;
+}
+
+input:hover {
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #0a1fe2;
+    margin-left: 45px;
+    font-size: 30px;
+    padding-left: 413px;
+    text-align: right;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    color: #202124;
+    border: 1px solid #f1f3f4;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f1f3f4;
+}
+
+button:hover {
+    width: 100px;
+    height: 30px;
+    color: #202124;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f1f3f4;
+}
+
+#eq {
+    background-color: #4285f4;
+    color: white;
+    font-size: 25px;
+    border: 2px solid #4285f4;
+}
+
+#eq:hover {
+    background-color: #4285f4;
+    color: white;
+    font-size: 25px;
+    border: 2px solid #0a1fe2;
+}
+
+h4 {
+    margin-top: 50px;
+    margin-bottom: -100px;
+    margin-left: 520px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    color: #307cf6;
+    font-size: 70px;
+}
+
+.key {
+    width: 100px;
+    margin-left: 400px;
+}
+
+.advanc {
+    margin-top: -170px;
+    margin-left: 40px;
+}
+
+#op {
+    background-color: #dadce0;
+}
+
+#col {
+    width: 204px;
+    height: 30px;
+    color: #202124;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #dadce0;
+}
+
+#col :hover {
+    width: 204px;
+    height: 30px;
+    color: #202124;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #dadce0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.856);
+}
